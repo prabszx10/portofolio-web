@@ -736,4 +736,54 @@ footer {
         align-items: flex-start;
         gap: 10px;
     }
+
+    /* Mereduksi layout About Grid menjadi 1 kolom penuh */
+    .about-grid {
+        grid-template-columns: 1fr !important;
+        gap: 24px;
+    }
+
+    /* Teks narasi About Me mengambil full width */
+    .about-text {
+        width: 100%;
+    }
+
+    .about-text p {
+        font-size: 0.95rem;
+        line-height: 1.6;
+        margin-bottom: 12px;
+    }
+
+    /* Ubah kontainer Card Statis menjadi grid horizontal ringkas */
+    .about-stats {
+        display: grid;
+        grid-template-columns: 1fr; /* Atau 1fr 1fr kalau mau 2 kolom */
+        gap: 12px;
+    }
+
+    /* Buat tampilan Card Statis lebih padat/compact */
+    .stat-card {
+        padding: 14px 16px !important;
+        display: flex;
+        align-items: center;
+        gap: 14px;
+        text-align: left;
+    }
+
+    /* Geser icon ke sebelah kiri judul, bukan di atas */
+    .stat-card .stat-icon {
+        margin-bottom: 0;
+        font-size: 1.5rem;
+        flex-shrink: 0;
+    }
+
+    .stat-card h3 {
+        font-size: 0.95rem;
+        margin-bottom: 2px;
+    }
+
+    .stat-card p {
+        font-size: 0.8rem;
+        line-height: 1.3;
+    }
 }
